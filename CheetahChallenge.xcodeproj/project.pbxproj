@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C9AB7D3121264C708EFE13A /* Pods_CheetahChallenge_CheetahChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEBF068D5D581C9B8C631DF /* Pods_CheetahChallenge_CheetahChallengeTests.framework */; };
+		8F51C3B423E09A6400E1C5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3B323E09A6400E1C5BF /* AppDelegate.swift */; };
+		8F51C3BD23E09A6700E1C5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F51C3BC23E09A6700E1C5BF /* Assets.xcassets */; };
+		8F51C3C023E09A6700E1C5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F51C3BE23E09A6700E1C5BF /* LaunchScreen.storyboard */; };
+		8F51C3E023E0C90500E1C5BF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3D923E0C90500E1C5BF /* Product.swift */; };
+		8F51C3E223E0C90500E1C5BF /* OrderItemsInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3DB23E0C90500E1C5BF /* OrderItemsInformation.swift */; };
+		8F51C3E423E0C90500E1C5BF /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3DD23E0C90500E1C5BF /* Cart.swift */; };
+		8F51C3E523E0C90500E1C5BF /* PackagingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3DE23E0C90500E1C5BF /* PackagingType.swift */; };
+		8F51C3E923E0F05900E1C5BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3E823E0F05900E1C5BF /* Router.swift */; };
+		8F51C3EB23E0F08700E1C5BF /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3EA23E0F08700E1C5BF /* CartRouter.swift */; };
+		8F51C3ED23E0F11600E1C5BF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3EC23E0F11600E1C5BF /* Endpoint.swift */; };
+		8F51C3F023E0F18800E1C5BF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3EF23E0F18800E1C5BF /* Environment.swift */; };
+		8F51C3F223E0F21000E1C5BF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3F123E0F21000E1C5BF /* Error.swift */; };
+		8F51C3F423E0F2CF00E1C5BF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3F323E0F2CF00E1C5BF /* API.swift */; };
+		8F51C3F623E0F30C00E1C5BF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3F523E0F30C00E1C5BF /* Network.swift */; };
+		8F51C3F923E0F93C00E1C5BF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3F823E0F93C00E1C5BF /* Utils.swift */; };
+		8F51C3FC23E0FAA000E1C5BF /* URLSession+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3FB23E0FAA000E1C5BF /* URLSession+Result.swift */; };
+		8F51C3FE23E0FC9300E1C5BF /* CartAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C3FD23E0FC9200E1C5BF /* CartAPI.swift */; };
+		8F51C40623E1ADD900E1C5BF /* ShopVCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C40223E1ADD900E1C5BF /* ShopVCNetwork.swift */; };
+		8F51C40723E1ADD900E1C5BF /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C40323E1ADD900E1C5BF /* ShopVC.swift */; };
+		8F51C40823E1ADD900E1C5BF /* ShopVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C40423E1ADD900E1C5BF /* ShopVCViewModel.swift */; };
+		8F51C40923E1ADD900E1C5BF /* ShopVCProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C40523E1ADD900E1C5BF /* ShopVCProvider.swift */; };
+		8F51C40B23E1BCAC00E1C5BF /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C40A23E1BCAC00E1C5BF /* Cancellable.swift */; };
+		8F51C41423E1C63400E1C5BF /* CartItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51C41323E1C63400E1C5BF /* CartItemViewModel.swift */; };
+		8F6EAEE123E1E04500AE8174 /* EasyViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEE023E1E04500AE8174 /* EasyViews.swift */; };
+		8F6EAEE323E1E84200AE8174 /* CartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEE223E1E84200AE8174 /* CartProductCell.swift */; };
+		8F6EAEE523E1EA8700AE8174 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEE423E1EA8700AE8174 /* AppFonts.swift */; };
+		8F6EAEE723E1EADF00AE8174 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEE623E1EADF00AE8174 /* ColorPalette.swift */; };
+		8F6EAEF423E1EC0200AE8174 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6EAEEF23E1EC0200AE8174 /* Roboto-Medium.ttf */; };
+		8F6EAEF523E1EC0200AE8174 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6EAEF023E1EC0200AE8174 /* Roboto-Light.ttf */; };
+		8F6EAEF623E1EC0200AE8174 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6EAEF123E1EC0200AE8174 /* Roboto-Regular.ttf */; };
+		8F6EAEF723E1EC0200AE8174 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6EAEF223E1EC0200AE8174 /* Roboto-Bold.ttf */; };
+		8F6EAEF823E1EC0200AE8174 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6EAEF323E1EC0200AE8174 /* Roboto-Thin.ttf */; };
+		8F6EAEFA23E21B7000AE8174 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEF923E21B7000AE8174 /* UIImageView+Cache.swift */; };
+		8F6EAEFE23E2BD7400AE8174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEFD23E2BD7400AE8174 /* SceneDelegate.swift */; };
+		8F6EAF0023E2D36D00AE8174 /* SummeryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAEFF23E2D36D00AE8174 /* SummeryView.swift */; };
+		8F6EAF0423E32AB400AE8174 /* ShopVCViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAF0323E32AB400AE8174 /* ShopVCViewModelTest.swift */; };
+		8F6EAF0723E32DA700AE8174 /* Cart+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EAF0623E32DA700AE8174 /* Cart+Stub.swift */; };
+		FA1CA3513B65CC5028675D63 /* Pods_CheetahChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85988452005027FF41CC0D91 /* Pods_CheetahChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F51C3C723E09A6700E1C5BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F51C3A823E09A6400E1C5BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F51C3AF23E09A6400E1C5BF;
+			remoteInfo = CheetahChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		262E157D1563F413F36FC416 /* Pods-CheetahChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CheetahChallengeTests/Pods-CheetahChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DE7EB4A07C27ECDE58B039A /* Pods-CheetahChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CheetahChallenge/Pods-CheetahChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3DEBF068D5D581C9B8C631DF /* Pods_CheetahChallenge_CheetahChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheetahChallenge_CheetahChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B73B05A3BE7B32105D04B0 /* Pods-CheetahChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallenge.release.xcconfig"; path = "Target Support Files/Pods-CheetahChallenge/Pods-CheetahChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		853B09541B069F546B8AABD7 /* Pods-CheetahChallenge-CheetahChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallenge-CheetahChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CheetahChallenge-CheetahChallengeTests/Pods-CheetahChallenge-CheetahChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		85988452005027FF41CC0D91 /* Pods_CheetahChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheetahChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2E6C5CF7C3EB8CCC394E65 /* Pods-CheetahChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-CheetahChallengeTests/Pods-CheetahChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F51C3B023E09A6400E1C5BF /* CheetahChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheetahChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F51C3B323E09A6400E1C5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F51C3BC23E09A6700E1C5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F51C3BF23E09A6700E1C5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F51C3C123E09A6700E1C5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F51C3C623E09A6700E1C5BF /* CheetahChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheetahChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F51C3CC23E09A6700E1C5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F51C3D923E0C90500E1C5BF /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8F51C3DB23E0C90500E1C5BF /* OrderItemsInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItemsInformation.swift; sourceTree = "<group>"; };
+		8F51C3DD23E0C90500E1C5BF /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		8F51C3DE23E0C90500E1C5BF /* PackagingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackagingType.swift; sourceTree = "<group>"; };
+		8F51C3E823E0F05900E1C5BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8F51C3EA23E0F08700E1C5BF /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		8F51C3EC23E0F11600E1C5BF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8F51C3EF23E0F18800E1C5BF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		8F51C3F123E0F21000E1C5BF /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		8F51C3F323E0F2CF00E1C5BF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8F51C3F523E0F30C00E1C5BF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8F51C3F823E0F93C00E1C5BF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8F51C3FB23E0FAA000E1C5BF /* URLSession+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Result.swift"; sourceTree = "<group>"; };
+		8F51C3FD23E0FC9200E1C5BF /* CartAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAPI.swift; sourceTree = "<group>"; };
+		8F51C40223E1ADD900E1C5BF /* ShopVCNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVCNetwork.swift; sourceTree = "<group>"; };
+		8F51C40323E1ADD900E1C5BF /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		8F51C40423E1ADD900E1C5BF /* ShopVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVCViewModel.swift; sourceTree = "<group>"; };
+		8F51C40523E1ADD900E1C5BF /* ShopVCProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVCProvider.swift; sourceTree = "<group>"; };
+		8F51C40A23E1BCAC00E1C5BF /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		8F51C41323E1C63400E1C5BF /* CartItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemViewModel.swift; sourceTree = "<group>"; };
+		8F6EAEE023E1E04500AE8174 /* EasyViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViews.swift; sourceTree = "<group>"; };
+		8F6EAEE223E1E84200AE8174 /* CartProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductCell.swift; sourceTree = "<group>"; };
+		8F6EAEE423E1EA8700AE8174 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		8F6EAEE623E1EADF00AE8174 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		8F6EAEEF23E1EC0200AE8174 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8F6EAEF023E1EC0200AE8174 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		8F6EAEF123E1EC0200AE8174 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8F6EAEF223E1EC0200AE8174 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		8F6EAEF323E1EC0200AE8174 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		8F6EAEF923E21B7000AE8174 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		8F6EAEFD23E2BD7400AE8174 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F6EAEFF23E2D36D00AE8174 /* SummeryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummeryView.swift; sourceTree = "<group>"; };
+		8F6EAF0323E32AB400AE8174 /* ShopVCViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVCViewModelTest.swift; sourceTree = "<group>"; };
+		8F6EAF0623E32DA700AE8174 /* Cart+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cart+Stub.swift"; sourceTree = "<group>"; };
+		C8B010C97B591AE23B35A699 /* Pods-CheetahChallenge-CheetahChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheetahChallenge-CheetahChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-CheetahChallenge-CheetahChallengeTests/Pods-CheetahChallenge-CheetahChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F51C3AD23E09A6400E1C5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1CA3513B65CC5028675D63 /* Pods_CheetahChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F51C3C323E09A6700E1C5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9AB7D3121264C708EFE13A /* Pods_CheetahChallenge_CheetahChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F51C3A723E09A6400E1C5BF = {
+			isa = PBXGroup;
+			children = (
+				8F51C3B223E09A6400E1C5BF /* CheetahChallenge */,
+				8F51C3C923E09A6700E1C5BF /* CheetahChallengeTests */,
+				8F51C3B123E09A6400E1C5BF /* Products */,
+				FCFD2D3039340A9A26E4A1C0 /* Pods */,
+				B70D0ACE28C2E35305948922 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F51C3B123E09A6400E1C5BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3B023E09A6400E1C5BF /* CheetahChallenge.app */,
+				8F51C3C623E09A6700E1C5BF /* CheetahChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F51C3B223E09A6400E1C5BF /* CheetahChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAEE823E1EB9900AE8174 /* Assets */,
+				8F6EAEDF23E1E00E00AE8174 /* Helpers */,
+				8F51C3E623E0F02900E1C5BF /* Network */,
+				8F51C40123E175D500E1C5BF /* UI */,
+				8F6EAEFD23E2BD7400AE8174 /* SceneDelegate.swift */,
+				8F51C3B323E09A6400E1C5BF /* AppDelegate.swift */,
+				8F51C3BE23E09A6700E1C5BF /* LaunchScreen.storyboard */,
+				8F51C3C123E09A6700E1C5BF /* Info.plist */,
+			);
+			path = CheetahChallenge;
+			sourceTree = "<group>";
+		};
+		8F51C3C923E09A6700E1C5BF /* CheetahChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAF0123E329DB00AE8174 /* UnitTests */,
+				8F51C3CC23E09A6700E1C5BF /* Info.plist */,
+			);
+			path = CheetahChallengeTests;
+			sourceTree = "<group>";
+		};
+		8F51C3E623E0F02900E1C5BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3F723E0F31E00E1C5BF /* Core */,
+				8F51C3F523E0F30C00E1C5BF /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F51C3E723E0F03C00E1C5BF /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3E823E0F05900E1C5BF /* Router.swift */,
+				8F51C3EA23E0F08700E1C5BF /* CartRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		8F51C3EE23E0F16800E1C5BF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3F323E0F2CF00E1C5BF /* API.swift */,
+				8F51C3FD23E0FC9200E1C5BF /* CartAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8F51C3F723E0F31E00E1C5BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3FF23E104E000E1C5BF /* Models */,
+				8F51C3EE23E0F16800E1C5BF /* API */,
+				8F51C3E723E0F03C00E1C5BF /* Routers */,
+				8F51C3FA23E0FA7700E1C5BF /* Extensions */,
+				8F51C3EC23E0F11600E1C5BF /* Endpoint.swift */,
+				8F51C3EF23E0F18800E1C5BF /* Environment.swift */,
+				8F51C3F123E0F21000E1C5BF /* Error.swift */,
+				8F51C3F823E0F93C00E1C5BF /* Utils.swift */,
+				8F51C40A23E1BCAC00E1C5BF /* Cancellable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8F51C3FA23E0FA7700E1C5BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3FB23E0FAA000E1C5BF /* URLSession+Result.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F51C3FF23E104E000E1C5BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3DB23E0C90500E1C5BF /* OrderItemsInformation.swift */,
+				8F51C3D923E0C90500E1C5BF /* Product.swift */,
+				8F51C3DE23E0C90500E1C5BF /* PackagingType.swift */,
+				8F51C3DD23E0C90500E1C5BF /* Cart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F51C40123E175D500E1C5BF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C40C23E1C3D000E1C5BF /* ShopVC */,
+				8F51C40323E1ADD900E1C5BF /* ShopVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8F51C40C23E1C3D000E1C5BF /* ShopVC */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C40E23E1C41200E1C5BF /* ViewModel */,
+				8F51C40D23E1C3EF00E1C5BF /* API */,
+				8F51C40F23E1C45E00E1C5BF /* Views */,
+			);
+			path = ShopVC;
+			sourceTree = "<group>";
+		};
+		8F51C40D23E1C3EF00E1C5BF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C40523E1ADD900E1C5BF /* ShopVCProvider.swift */,
+				8F51C40223E1ADD900E1C5BF /* ShopVCNetwork.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8F51C40E23E1C41200E1C5BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C40423E1ADD900E1C5BF /* ShopVCViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F51C40F23E1C45E00E1C5BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C41023E1C5C300E1C5BF /* ViewModel */,
+				8F6EAEE223E1E84200AE8174 /* CartProductCell.swift */,
+				8F6EAEFF23E2D36D00AE8174 /* SummeryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F51C41023E1C5C300E1C5BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C41323E1C63400E1C5BF /* CartItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F6EAEDF23E1E00E00AE8174 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAEE023E1E04500AE8174 /* EasyViews.swift */,
+				8F6EAEE423E1EA8700AE8174 /* AppFonts.swift */,
+				8F6EAEE623E1EADF00AE8174 /* ColorPalette.swift */,
+				8F6EAEF923E21B7000AE8174 /* UIImageView+Cache.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8F6EAEE823E1EB9900AE8174 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8F51C3BC23E09A6700E1C5BF /* Assets.xcassets */,
+				8F6EAEEE23E1EC0200AE8174 /* Roboto */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8F6EAEEE23E1EC0200AE8174 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAEEF23E1EC0200AE8174 /* Roboto-Medium.ttf */,
+				8F6EAEF023E1EC0200AE8174 /* Roboto-Light.ttf */,
+				8F6EAEF123E1EC0200AE8174 /* Roboto-Regular.ttf */,
+				8F6EAEF223E1EC0200AE8174 /* Roboto-Bold.ttf */,
+				8F6EAEF323E1EC0200AE8174 /* Roboto-Thin.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		8F6EAF0123E329DB00AE8174 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAF0523E32D4F00AE8174 /* stubs */,
+				8F6EAF0223E329EA00AE8174 /* view models */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		8F6EAF0223E329EA00AE8174 /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAF0323E32AB400AE8174 /* ShopVCViewModelTest.swift */,
+			);
+			path = "view models";
+			sourceTree = "<group>";
+		};
+		8F6EAF0523E32D4F00AE8174 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EAF0623E32DA700AE8174 /* Cart+Stub.swift */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		B70D0ACE28C2E35305948922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85988452005027FF41CC0D91 /* Pods_CheetahChallenge.framework */,
+				3DEBF068D5D581C9B8C631DF /* Pods_CheetahChallenge_CheetahChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCFD2D3039340A9A26E4A1C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7EB4A07C27ECDE58B039A /* Pods-CheetahChallenge.debug.xcconfig */,
+				82B73B05A3BE7B32105D04B0 /* Pods-CheetahChallenge.release.xcconfig */,
+				8E2E6C5CF7C3EB8CCC394E65 /* Pods-CheetahChallengeTests.debug.xcconfig */,
+				262E157D1563F413F36FC416 /* Pods-CheetahChallengeTests.release.xcconfig */,
+				C8B010C97B591AE23B35A699 /* Pods-CheetahChallenge-CheetahChallengeTests.debug.xcconfig */,
+				853B09541B069F546B8AABD7 /* Pods-CheetahChallenge-CheetahChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F51C3AF23E09A6400E1C5BF /* CheetahChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F51C3CF23E09A6700E1C5BF /* Build configuration list for PBXNativeTarget "CheetahChallenge" */;
+			buildPhases = (
+				8ED244758A6B16593496F458 /* [CP] Check Pods Manifest.lock */,
+				8F51C3AC23E09A6400E1C5BF /* Sources */,
+				8F51C3AD23E09A6400E1C5BF /* Frameworks */,
+				8F51C3AE23E09A6400E1C5BF /* Resources */,
+				70C3A2ECF5537ACDDC15C59C /* [CP] Embed Pods Frameworks */,
+				8F73374723E3A00E00D77F32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheetahChallenge;
+			productName = CheetahChallenge;
+			productReference = 8F51C3B023E09A6400E1C5BF /* CheetahChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F51C3C523E09A6700E1C5BF /* CheetahChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F51C3D223E09A6700E1C5BF /* Build configuration list for PBXNativeTarget "CheetahChallengeTests" */;
+			buildPhases = (
+				B9EE8568D34D61CDCD71B92A /* [CP] Check Pods Manifest.lock */,
+				8F51C3C223E09A6700E1C5BF /* Sources */,
+				8F51C3C323E09A6700E1C5BF /* Frameworks */,
+				8F51C3C423E09A6700E1C5BF /* Resources */,
+				E150AACC77AD80A0A067CEC5 /* [CP] Embed Pods Frameworks */,
+				8F73374623E39FDD00D77F32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F51C3C823E09A6700E1C5BF /* PBXTargetDependency */,
+			);
+			name = CheetahChallengeTests;
+			productName = CheetahChallengeTests;
+			productReference = 8F51C3C623E09A6700E1C5BF /* CheetahChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F51C3A823E09A6400E1C5BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Shalom Shwaitzer";
+				TargetAttributes = {
+					8F51C3AF23E09A6400E1C5BF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8F51C3C523E09A6700E1C5BF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8F51C3AF23E09A6400E1C5BF;
+					};
+				};
+			};
+			buildConfigurationList = 8F51C3AB23E09A6400E1C5BF /* Build configuration list for PBXProject "CheetahChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F51C3A723E09A6400E1C5BF;
+			productRefGroup = 8F51C3B123E09A6400E1C5BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F51C3AF23E09A6400E1C5BF /* CheetahChallenge */,
+				8F51C3C523E09A6700E1C5BF /* CheetahChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F51C3AE23E09A6400E1C5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6EAEF823E1EC0200AE8174 /* Roboto-Thin.ttf in Resources */,
+				8F51C3C023E09A6700E1C5BF /* LaunchScreen.storyboard in Resources */,
+				8F51C3BD23E09A6700E1C5BF /* Assets.xcassets in Resources */,
+				8F6EAEF723E1EC0200AE8174 /* Roboto-Bold.ttf in Resources */,
+				8F6EAEF623E1EC0200AE8174 /* Roboto-Regular.ttf in Resources */,
+				8F6EAEF523E1EC0200AE8174 /* Roboto-Light.ttf in Resources */,
+				8F6EAEF423E1EC0200AE8174 /* Roboto-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F51C3C423E09A6700E1C5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70C3A2ECF5537ACDDC15C59C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge/Pods-CheetahChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge/Pods-CheetahChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge/Pods-CheetahChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED244758A6B16593496F458 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheetahChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F73374623E39FDD00D77F32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8F73374723E3A00E00D77F32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B9EE8568D34D61CDCD71B92A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheetahChallenge-CheetahChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E150AACC77AD80A0A067CEC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge-CheetahChallengeTests/Pods-CheetahChallenge-CheetahChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge-CheetahChallengeTests/Pods-CheetahChallenge-CheetahChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheetahChallenge-CheetahChallengeTests/Pods-CheetahChallenge-CheetahChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F51C3AC23E09A6400E1C5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F51C3F223E0F21000E1C5BF /* Error.swift in Sources */,
+				8F51C3ED23E0F11600E1C5BF /* Endpoint.swift in Sources */,
+				8F51C3E523E0C90500E1C5BF /* PackagingType.swift in Sources */,
+				8F51C40923E1ADD900E1C5BF /* ShopVCProvider.swift in Sources */,
+				8F51C3F023E0F18800E1C5BF /* Environment.swift in Sources */,
+				8F51C41423E1C63400E1C5BF /* CartItemViewModel.swift in Sources */,
+				8F51C3E923E0F05900E1C5BF /* Router.swift in Sources */,
+				8F51C3E223E0C90500E1C5BF /* OrderItemsInformation.swift in Sources */,
+				8F51C40623E1ADD900E1C5BF /* ShopVCNetwork.swift in Sources */,
+				8F51C3B423E09A6400E1C5BF /* AppDelegate.swift in Sources */,
+				8F51C3EB23E0F08700E1C5BF /* CartRouter.swift in Sources */,
+				8F51C3E423E0C90500E1C5BF /* Cart.swift in Sources */,
+				8F51C40B23E1BCAC00E1C5BF /* Cancellable.swift in Sources */,
+				8F6EAEE523E1EA8700AE8174 /* AppFonts.swift in Sources */,
+				8F6EAEFE23E2BD7400AE8174 /* SceneDelegate.swift in Sources */,
+				8F51C3F623E0F30C00E1C5BF /* Network.swift in Sources */,
+				8F51C40723E1ADD900E1C5BF /* ShopVC.swift in Sources */,
+				8F51C40823E1ADD900E1C5BF /* ShopVCViewModel.swift in Sources */,
+				8F51C3E023E0C90500E1C5BF /* Product.swift in Sources */,
+				8F51C3F423E0F2CF00E1C5BF /* API.swift in Sources */,
+				8F6EAEE723E1EADF00AE8174 /* ColorPalette.swift in Sources */,
+				8F6EAF0023E2D36D00AE8174 /* SummeryView.swift in Sources */,
+				8F51C3F923E0F93C00E1C5BF /* Utils.swift in Sources */,
+				8F6EAEE123E1E04500AE8174 /* EasyViews.swift in Sources */,
+				8F6EAEE323E1E84200AE8174 /* CartProductCell.swift in Sources */,
+				8F51C3FC23E0FAA000E1C5BF /* URLSession+Result.swift in Sources */,
+				8F51C3FE23E0FC9300E1C5BF /* CartAPI.swift in Sources */,
+				8F6EAEFA23E21B7000AE8174 /* UIImageView+Cache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F51C3C223E09A6700E1C5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6EAF0723E32DA700AE8174 /* Cart+Stub.swift in Sources */,
+				8F6EAF0423E32AB400AE8174 /* ShopVCViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F51C3C823E09A6700E1C5BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F51C3AF23E09A6400E1C5BF /* CheetahChallenge */;
+			targetProxy = 8F51C3C723E09A6700E1C5BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F51C3BE23E09A6700E1C5BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F51C3BF23E09A6700E1C5BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F51C3CD23E09A6700E1C5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F51C3CE23E09A6700E1C5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F51C3D023E09A6700E1C5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE7EB4A07C27ECDE58B039A /* Pods-CheetahChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88SA3QBW9Z;
+				INFOPLIST_FILE = CheetahChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shalom.CheetahChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F51C3D123E09A6700E1C5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B73B05A3BE7B32105D04B0 /* Pods-CheetahChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88SA3QBW9Z;
+				INFOPLIST_FILE = CheetahChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shalom.CheetahChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F51C3D323E09A6700E1C5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B010C97B591AE23B35A699 /* Pods-CheetahChallenge-CheetahChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88SA3QBW9Z;
+				INFOPLIST_FILE = CheetahChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shalom.CheetahChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheetahChallenge.app/CheetahChallenge";
+			};
+			name = Debug;
+		};
+		8F51C3D423E09A6700E1C5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853B09541B069F546B8AABD7 /* Pods-CheetahChallenge-CheetahChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88SA3QBW9Z;
+				INFOPLIST_FILE = CheetahChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shalom.CheetahChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheetahChallenge.app/CheetahChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F51C3AB23E09A6400E1C5BF /* Build configuration list for PBXProject "CheetahChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F51C3CD23E09A6700E1C5BF /* Debug */,
+				8F51C3CE23E09A6700E1C5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F51C3CF23E09A6700E1C5BF /* Build configuration list for PBXNativeTarget "CheetahChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F51C3D023E09A6700E1C5BF /* Debug */,
+				8F51C3D123E09A6700E1C5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F51C3D223E09A6700E1C5BF /* Build configuration list for PBXNativeTarget "CheetahChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F51C3D323E09A6700E1C5BF /* Debug */,
+				8F51C3D423E09A6700E1C5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F51C3A823E09A6400E1C5BF /* Project object */;
+}

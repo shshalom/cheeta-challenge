@@ -1,0 +1,32 @@
+excluded:
+  - Pods
+  
+disabled_rules:
+  - trailing_whitespace
+  - nesting  
+  - valid_ibinspectable
+  - function_body_length
+  - function_parameter_count
+  - force_cast
+  - force_try
+  - cyclomatic_complexity
+  - todo
+  - identifier_name
+
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+
+included:
+  - CheetahChallenge
+  - CheetahChallengeTests
+
+line_length: 200
+file_length: 
+  warning: 1000
+  error: 3000
+type_body_length:
+  warning: 800
+  error: 1200
+shorthand_operator: warning
+large_tuple: 3
