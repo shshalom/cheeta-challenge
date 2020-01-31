@@ -21,7 +21,12 @@ RxSwift - Reactive programming framework.
 https://github.com/ReactiveX/RxSwift
 SnapKit -  A Swift Autolayout DSL
 https://github.com/SnapKit/SnapKit
+SwiftyAttributes - A Swifty API for attributed strings
+https://github.com/eddiekaiger/SwiftyAttributes
 Nimble - A Matcher Framework
 https://github.com/Quick/Nimble
 Quick - A Behavior-driven development framework
 https://github.com/Quick/Quick
+Fakery - Swift fake data generator
+https://github.com/vadymmarkov/Fakery
+
